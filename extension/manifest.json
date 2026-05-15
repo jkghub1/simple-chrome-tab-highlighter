@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Active Tab Highlighter",
+  "name": "Simple Chrome Tab Highlighter",
   "version": "1.0",
   "description": "Customisable coloured bar on the active tab. Load the companion theme/ folder separately for tab strip colours.",
   "permissions": ["storage"],
