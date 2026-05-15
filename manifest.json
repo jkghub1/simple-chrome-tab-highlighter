@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Active Tab Highlighter",
+  "version": "1.0",
+  "description": "High-contrast tab strip theme plus a customisable indicator bar on the active page.",
+  "permissions": ["storage"],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Active Tab Highlighter"
+  },
+  "theme": {
+    "colors": {
+      "frame":               [28,  28,  28 ],
+      "toolbar":             [245, 245, 245],
+      "tab_text":            [0,   0,   0  ],
+      "tab_background_text": [150, 150, 150],
+      "bookmark_text":       [50,  50,  50 ],
+      "ntp_background":      [255, 255, 255],
+      "ntp_text":            [0,   0,   0  ]
+    }
+  }
+}
