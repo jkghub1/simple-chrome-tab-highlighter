@@ -94,10 +94,10 @@
   <h1>Inactive Tab Highlighter</h1>
 
   <div class="section">
-    <div class="row-label">Colour</div>
+    <div class="row-label">Inactive tab colour</div>
     <div class="color-row">
       <input type="color" id="color" value="#ff6600">
-      <div id="preview" title="Preview of indicator bar colour"></div>
+      <div id="preview" title="Colour shown in tab strip for inactive tabs"></div>
     </div>
   </div>
 
@@ -109,26 +109,19 @@
     <input type="range" id="brightness" min="10" max="200" value="100">
   </div>
 
-  <div class="section">
-    <div class="row-label">
-      Bar thickness
-      <span id="hval">6 px</span>
-    </div>
-    <input type="range" id="height" min="2" max="24" value="6">
-  </div>
-
   <hr class="divider">
 
   <div class="toggle-row">
     <input type="checkbox" id="enabled" checked>
-    <label for="enabled">Show indicator bar on inactive tabs</label>
+    <label for="enabled">Replace favicon on inactive tabs</label>
   </div>
 
   <div class="note">
-    <strong>Tab strip colours</strong> come from the built-in theme — inactive tabs
-    are dark, active tab is left at the browser default. To customise those colours,
-    edit <code>theme.colors</code> in <code>manifest.json</code> and reload the
-    extension at <code>chrome://extensions</code>.
+    Inactive tabs show a coloured square in place of their favicon.
+    The active tab is untouched — original favicon restored automatically.<br><br>
+    <strong>Tab strip colours</strong> also use the built-in high-contrast theme
+    (inactive tabs dark, active tab light). Edit <code>theme.colors</code> in
+    <code>manifest.json</code> to customise.
   </div>
 
   <script src="popup.js"></script>

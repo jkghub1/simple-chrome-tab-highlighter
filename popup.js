@@ -1,14 +1,12 @@
 (function () {
   'use strict';
 
-  const DEFAULTS = { baseColor: '#ff6600', brightness: 100, height: 6, enabled: true };
+  const DEFAULTS = { baseColor: '#ff6600', brightness: 100, enabled: true };
 
   const els = {
     color:      document.getElementById('color'),
     brightness: document.getElementById('brightness'),
     bval:       document.getElementById('bval'),
-    height:     document.getElementById('height'),
-    hval:       document.getElementById('hval'),
     enabled:    document.getElementById('enabled'),
     preview:    document.getElementById('preview'),
   };
@@ -28,10 +26,8 @@
   }
 
   function updatePreview() {
-    const color = computeColor(els.color.value, parseInt(els.brightness.value));
-    els.preview.style.backgroundColor = color;
+    els.preview.style.backgroundColor = computeColor(els.color.value, parseInt(els.brightness.value));
     els.bval.textContent = `${els.brightness.value}%`;
-    els.hval.textContent = `${els.height.value} px`;
   }
 
   function save() {
@@ -39,23 +35,18 @@
     chrome.storage.sync.set({
       baseColor:  els.color.value,
       brightness: parseInt(els.brightness.value),
-      height:     parseInt(els.height.value),
       enabled:    els.enabled.checked,
     });
   }
 
-  // Load saved settings and populate controls
   chrome.storage.sync.get(DEFAULTS, (s) => {
     els.color.value      = s.baseColor;
     els.brightness.value = s.brightness;
-    els.height.value     = s.height;
     els.enabled.checked  = s.enabled;
     updatePreview();
   });
 
-  // Save on any change
   els.color.addEventListener('input', save);
   els.brightness.addEventListener('input', save);
-  els.height.addEventListener('input', save);
   els.enabled.addEventListener('change', save);
 })();
