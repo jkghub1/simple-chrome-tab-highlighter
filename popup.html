@@ -91,7 +91,7 @@
   </style>
 </head>
 <body>
-  <h1>Active Tab Highlighter</h1>
+  <h1>Inactive Tab Highlighter</h1>
 
   <div class="section">
     <div class="row-label">Colour</div>
@@ -121,14 +121,14 @@
 
   <div class="toggle-row">
     <input type="checkbox" id="enabled" checked>
-    <label for="enabled">Show indicator bar on active tab</label>
+    <label for="enabled">Show indicator bar on inactive tabs</label>
   </div>
 
   <div class="note">
-    <strong>Tab strip colours</strong> come from the built-in theme — active tab is
-    light, inactive tabs are dark. To customise those colours, edit
-    <code>theme.colors</code> in <code>manifest.json</code> and reload the extension
-    at <code>chrome://extensions</code>.
+    <strong>Tab strip colours</strong> come from the built-in theme — inactive tabs
+    are dark, active tab is left at the browser default. To customise those colours,
+    edit <code>theme.colors</code> in <code>manifest.json</code> and reload the
+    extension at <code>chrome://extensions</code>.
   </div>
 
   <script src="popup.js"></script>

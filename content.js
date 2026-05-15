@@ -37,7 +37,7 @@
 
     bar.style.backgroundColor = `rgb(${r},${g},${b})`;
     bar.style.height           = `${height}px`;
-    bar.style.opacity          = (enabled && document.visibilityState !== 'hidden') ? '1' : '0';
+    bar.style.opacity          = (enabled && document.visibilityState === 'hidden') ? '1' : '0';
   }
 
   function refresh() {
