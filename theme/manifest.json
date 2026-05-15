@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Active Tab Highlighter — Theme",
+  "version": "1.0",
+  "description": "High-contrast tab strip: active tab #3c3c3c, inactive tabs near-black. Edit theme.colors and reload to customise.",
+  "theme": {
+    "colors": {
+      "frame":               [15,  15,  15 ],
+      "toolbar":             [60,  60,  60 ],
+      "tab_text":            [230, 230, 230],
+      "tab_background_text": [140, 140, 140],
+      "bookmark_text":       [210, 210, 210],
+      "ntp_background":      [32,  32,  32 ],
+      "ntp_text":            [230, 230, 230]
+    }
+  }
+}
