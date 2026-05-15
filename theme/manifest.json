@@ -3,6 +3,9 @@
   "name": "Active Tab Highlighter — Theme",
   "version": "1.0",
   "description": "High-contrast tab strip: active tab #3c3c3c, inactive tabs near-black. Edit theme.colors and reload to customise.",
+  "icons": {
+    "128": "icon128.png"
+  },
   "theme": {
     "colors": {
       "frame":               [15,  15,  15 ],
