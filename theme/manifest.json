@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Active Tab Highlighter — Theme",
+  "name": "Simple Chrome Tab Highlighter",
   "version": "1.0",
-  "description": "High-contrast tab strip: active tab #3c3c3c, inactive tabs near-black. Edit theme.colors and reload to customise.",
+  "description": "High-contrast tab strip: inactive tabs near-black, active tab dark grey.",
   "icons": {
     "128": "icon128.png"
   },
