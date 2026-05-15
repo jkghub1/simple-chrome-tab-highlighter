@@ -19,13 +19,13 @@
   },
   "theme": {
     "colors": {
-      "frame":               [28,  28,  28 ],
-      "toolbar":             [245, 245, 245],
-      "tab_text":            [0,   0,   0  ],
-      "tab_background_text": [150, 150, 150],
-      "bookmark_text":       [50,  50,  50 ],
-      "ntp_background":      [255, 255, 255],
-      "ntp_text":            [0,   0,   0  ]
+      "frame":               [15,  15,  15 ],
+      "toolbar":             [60,  60,  60 ],
+      "tab_text":            [230, 230, 230],
+      "tab_background_text": [140, 140, 140],
+      "bookmark_text":       [210, 210, 210],
+      "ntp_background":      [32,  32,  32 ],
+      "ntp_text":            [230, 230, 230]
     }
   }
 }
